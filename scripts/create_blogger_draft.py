@@ -149,7 +149,7 @@ def create_or_verify_draft(title: str, content: str) -> None:
             "blogId": blog_id,
             "fetchBodies": True,
             "maxResults": 500,
-            "status": ["DRAFT", "LIVE"],
+            "status": ["draft", "live"],
             "view": "ADMIN",
         }
         if token:
