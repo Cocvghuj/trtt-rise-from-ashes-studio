@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11152d">
+<meta name="description" content="Rise From Ashes — a personal writing and publishing studio by TRTT Voyage.">
+<title>Rise From Ashes — TRTT Voyage Studio</title>
+<style>
+:root{--pink:#e98baf;--piyaji:#b77991;--gold:#d6a542;--midnight:#11152d;--white:#fff;--ink:#171827;--muted:#aeb1c3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--midnight);color:var(--white);font:16px/1.6 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+a{color:var(--gold)}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.hero{min-height:65vh;display:grid;place-items:center;text-align:center;padding:64px 20px;background:radial-gradient(ellipse at 50% 100%,#b7799140,transparent 55%),linear-gradient(145deg,#11152d,#21182b 65%,#3b202c)}
+.wing{font-size:clamp(48px,10vw,90px);filter:drop-shadow(0 8px 20px #d6a54255)}
+.kicker{letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-size:.78rem;font-weight:800}
+h1{font-size:clamp(2.7rem,8vw,5.8rem);line-height:.98;margin:16px 0;color:var(--white);letter-spacing:-.04em}
+.hero p{max-width:700px;color:#e9dce4;font-size:clamp(1rem,2.5vw,1.25rem);margin:18px auto}
+.tagline{color:var(--pink);font-weight:800;letter-spacing:.1em}
+.wrap{width:min(1050px,calc(100% - 32px));margin:28px auto 70px}
+.panel{background:#191d39;border:1px solid #ffffff1c;border-radius:22px;padding:clamp(18px,4vw,30px);margin:20px 0;box-shadow:0 18px 50px #0002}
+h2{font-size:1.55rem;margin:0 0 8px}.sub{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+label{display:block;font-weight:700;margin:14px 0 6px;color:#f4dce7}
+input,textarea,select{width:100%;padding:13px 14px;border:1px solid #ffffff2b;border-radius:12px;background:#10142a;color:white;outline:none}
+textarea{min-height:150px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--pink);box-shadow:0 0 0 3px #e98baf22}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.btn{border:0;border-radius:999px;padding:12px 19px;background:var(--gold);color:#171321;font-weight:850}.btn.alt{background:transparent;border:1px solid var(--pink);color:var(--pink)}.btn:focus-visible{outline:3px solid white;outline-offset:3px}
+.preview{background:#fff;color:#242333;border-radius:18px;padding:clamp(20px,5vw,42px);overflow-wrap:anywhere}.preview h2{font-size:clamp(2rem,5vw,3rem);color:#9a4e70;text-align:center;line-height:1.1}.preview .lead{text-align:center;color:#78576a;font-weight:700}.quote{padding:18px;border-left:4px solid var(--gold);background:#f8eef2;border-radius:0 12px 12px 0;font-size:1.1rem}.preview p{line-height:1.8}.preview .signature{text-align:right;font-weight:800;color:#8b536b}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.step{border:1px solid #ffffff24;border-radius:14px;padding:14px;text-align:center;background:#11152d}.step b{display:block;color:var(--gold)}
+.note{font-size:.9rem;color:var(--muted)}footer{text-align:center;padding:25px;color:#aeb1c3}footer strong{color:var(--pink)}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div><div class="wing" aria-hidden="true">🦅</div><div class="kicker">TRTT VOYAGE × FALKON FLY</div>
+<h1>RISE FROM<br><span style="color:var(--gold)">ASHES</span></h1>
+<p>They saw the ashes. They never saw the fire inside.</p>
+<div class="tagline">ONE TEAM. ONE VISION. ONE JOURNEY.</div></div>
+</header>
+<main class="wrap">
+<section class="panel">
+<h2>✍️ Your story deserves a voice</h2>
+<p class="sub">Write honestly. Shape your words. Preview your article. Nothing is published automatically.</p>
+<div class="grid">
+<div><label for="postTitle">Story title</label><input id="postTitle" value="RISE FROM ASHES"></div>
+<div><label for="theme">Visual mood</label><select id="theme"><option value="phoenix">Phoenix — Rise again</option><option value="horizon">Horizon — A new beginning</option><option value="voyage">Voyage — Keep moving forward</option></select></div>
+</div>
+<label for="story">Your words</label>
+<textarea id="story">There are days when the weight of everything feels impossible to explain. There are moments when silence says more than words ever could.
+
+But a difficult chapter is not the whole story. Tears are not failure. A pause is not the end.
+
+I am still here. I am learning to turn pain into purpose, to protect the dream that still lives inside me, and to take the next step — one honest step at a time.
+
+I have not finished my journey. I am rising, in my own time, with my own name and my own dream.</textarea>
+<div class="actions"><button class="btn" id="previewBtn">Preview my story</button><button class="btn alt" id="copyBtn">Copy Blogger HTML</button><button class="btn alt" id="downloadBtn">Download HTML</button></div>
+<p class="note" id="status" role="status" aria-live="polite">Your writing stays in this page until you choose to copy or download it.</p>
+</section>
+<section class="panel"><h2>🔥 The journey</h2><p class="sub">A clear, honest workflow — no pretend automation.</p><div class="steps"><div class="step">💡<b>YOUR IDEA</b><small>Write what matters</small></div><div class="step">✍️<b>YOUR WORDS</b><small>Shape the story</small></div><div class="step">👁️<b>PREVIEW</b><small>Review every line</small></div><div class="step">🚀<b>YOUR APPROVAL</b><small>Export, then publish yourself</small></div></div></section>
+<section class="panel"><h2>👀 Live preview</h2><div class="preview" id="preview"><h2 id="previewTitle">RISE FROM ASHES</h2><p class="lead">Through every storm, a new horizon is possible.</p><div class="quote">“I am not finished. My story is still being written.”</div><div id="previewBody"></div><p class="signature">— Abu Taher · TRTT Voyage</p><p style="text-align:center"><a href="https://trttvoyage.com">trttvoyage.com</a></p></div></section>
+<section class="panel"><h2>🛡️ Built on truth</h2><p class="sub">This studio creates a local preview and Blogger-ready HTML. It does not connect to Blogger, Facebook, Telegram, or GitHub APIs from the browser. It never claims that a post was published when it was not.</p></section>
+</main>
+<footer><strong>TRTT VOYAGE</strong><br>From Vision to Global Brand! Explore Beyond. Discover Everything.<br>© 2026 · ONE TEAM. ONE VISION. ONE JOURNEY.</footer>
+<script>
+const $=id=>document.getElementById(id);
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function paragraphs(s){return s.split(/\n\s*\n/).map(p=>'<p>'+esc(p).replace(/\n/g,'<br>')+'</p>').join('');}
+function bloggerHtml(){const title=esc($('postTitle').value.trim()||'RISE FROM ASHES');return '<div style="max-width:780px;margin:auto;font-family:Arial,sans-serif;color:#222;line-height:1.8"><h1 style="text-align:center;color:#9a4e70">'+title+'</h1><p style="text-align:center;font-weight:bold;color:#78576a">Through every storm, a new horizon is possible.</p><blockquote style="padding:18px;background:#f8eef2;border-left:4px solid #d6a542">“I am not finished. My story is still being written.”</blockquote>'+paragraphs($('story').value)+'<p style="text-align:right;font-weight:bold">— Abu Taher · TRTT Voyage</p><p><a href="https://trttvoyage.com">TRTT Voyage</a></p><p><small>Disclosure: This is a personal reflection, not a news report or independently verified factual account.</small></p></div>';}
+function refresh(){ $('previewTitle').textContent=$('postTitle').value.trim()||'RISE FROM ASHES';$('previewBody').innerHTML=paragraphs($('story').value);$('status').textContent='Preview updated. Review your words before exporting.';}
+$('previewBtn').addEventListener('click',refresh);
+$('postTitle').addEventListener('input',refresh);$('story').addEventListener('input',refresh);
+$('copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(bloggerHtml());$('status').textContent='Blogger HTML copied. Paste it into Blogger in HTML view; it has not been published.';}catch(e){$('status').textContent='Clipboard access was blocked. Use Download HTML instead.';}});
+$('downloadBtn').addEventListener('click',()=>{const blob=new Blob([bloggerHtml()],{type:'text/html;charset=utf-8'});const a=document.createElement('a');const u=URL.createObjectURL(blob);a.href=u;a.download='rise-from-ashes-blogger-draft.html';a.click();URL.revokeObjectURL(u);$('status').textContent='HTML file prepared for download. It has not been sent to Blogger.';});
+refresh();
+</script>
+</body></html>
