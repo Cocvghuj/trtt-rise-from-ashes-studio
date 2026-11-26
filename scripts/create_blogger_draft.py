@@ -122,6 +122,25 @@ def create_or_verify_draft(title: str, content: str) -> None:
     )
     api = build("blogger", "v3", credentials=credentials, cache_discovery=False)
 
+    # Verify the destination blog identity before any write. This prevents
+    # accidentally sending TRTT content to the separate FlightScoutPro blog.
+    from urllib.parse import urlparse
+
+    blog = api.blogs().get(blogId=blog_id).execute(num_retries=5)
+    blog_name = (blog.get("name") or "").strip().casefold()
+    blog_host = (urlparse(blog.get("url") or "").hostname or "").casefold()
+    allowed_hosts = {
+        "trttvoyage.blogspot.com",
+        "trttvoyage.com",
+        "www.trttvoyage.com",
+    }
+    if "trtt" not in blog_name or blog_host not in allowed_hosts:
+        raise RuntimeError(
+            "BLOGGER_BLOG_ID does not resolve to the verified TRTT Voyage blog; "
+            "refusing to write to any other destination."
+        )
+    print(f"PASS: Blogger destination verified as TRTT Voyage ({blog_host}).")
+
     # Search both draft and live posts before creating anything. Never overwrite.
     token = None
     matches = []
