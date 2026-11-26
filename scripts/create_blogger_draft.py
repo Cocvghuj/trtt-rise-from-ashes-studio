@@ -146,15 +146,20 @@ def create_or_verify_draft(title: str, content: str) -> None:
             break
 
     if matches:
+        # Any LIVE collision blocks the run, even if a separate matching draft exists.
+        if any((post.get("status") or "").upper() == "LIVE" for post in matches):
+            raise RuntimeError("A matching LIVE post exists; refusing to create or modify a duplicate.")
         marked = [post for post in matches if MARKER in (post.get("content") or "")]
-        if len(marked) == 1 and (marked[0].get("status") or "").upper() == "DRAFT":
+        if (
+            len(matches) == 1
+            and len(marked) == 1
+            and (marked[0].get("status") or "").upper() == "DRAFT"
+        ):
             print(
                 "PASS: Existing matching Blogger DRAFT verified; "
                 f"post_id={marked[0].get('id')}; no duplicate created."
             )
             return
-        if any((post.get("status") or "").upper() == "LIVE" for post in matches):
-            raise RuntimeError("A matching LIVE post exists; refusing to create or modify a duplicate.")
         raise RuntimeError(
             "A matching title/marker already exists but cannot be safely verified as one DRAFT; "
             "manual review required. No post was changed."
