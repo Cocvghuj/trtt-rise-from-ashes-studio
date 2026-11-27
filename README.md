@@ -46,7 +46,7 @@ Palette: Pink `#E98BAF`, Piyaji `#B77991`, Kathali `#D6A542`, Royal Midnight `#1
 ## Official TRTT Voyage identity
 
 - **Owner:** Engr. Abu Taher
-- **Brand:** [TRTT Voyage](https://trttvoyage.com) — From Vision to Global Brand! Explore Beyond. Discover Everything.
+- **Brand:** [TRTT Voyage](https://www.trttvoyage.com) — From Vision to Global Brand! Explore Beyond. Discover Everything.
 - **GitHub profile:** [@Cocvghuj](https://github.com/Cocvghuj)
 - **GitHub organization:** [Trttvoyage](https://github.com/Trttvoyage)
 - **WhatsApp Channel:** https://whatsapp.com/channel/0029Vb8co9VDeONEz0B5e51M
