@@ -41,3 +41,22 @@ TRTT Voyage — From Vision to Global Brand! Explore Beyond. Discover Everything
 ONE TEAM. ONE VISION. ONE JOURNEY.
 
 Palette: Pink `#E98BAF`, Piyaji `#B77991`, Kathali `#D6A542`, Royal Midnight `#11152D`, White `#FFFFFF`.
+
+
+## Official TRTT Voyage identity
+
+- **Owner:** Engr. Abu Taher
+- **Brand:** [TRTT Voyage](https://trttvoyage.com) — From Vision to Global Brand! Explore Beyond. Discover Everything.
+- **GitHub profile:** [@Cocvghuj](https://github.com/Cocvghuj)
+- **GitHub organization:** [Trttvoyage](https://github.com/Trttvoyage)
+- **WhatsApp Channel:** https://whatsapp.com/channel/0029Vb8co9VDeONEz0B5e51M
+- **Telegram Channel:** https://t.me/trttnews24bd
+- **Facebook:** https://www.facebook.com/profile.php?id=61595319351601
+- **CodePen:** https://codepen.io/Abu-Taher-the-styleful
+- **Buy Me a Coffee:** https://buymeacoffee.com/engrtaher20
+
+## Disclaimer
+
+Rise From Ashes is a separate writing-studio module within the TRTT Voyage project family. It is not the main TRTT Voyage website and does not publish automatically. The Blogger workflow is designed for DRAFT creation only after the repository's documented approval gates and secret checks. A successful GitHub build does not prove that a Blogger draft exists; verify the returned post ID and draft status.
+
+AI tools may assist with writing and review. The author remains responsible for the content and final publication. Do not include private contact details, passwords, API keys, or one-time codes in drafts or repository files.
